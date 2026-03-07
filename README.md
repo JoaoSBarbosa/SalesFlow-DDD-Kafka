@@ -1,18 +1,16 @@
 # SalesFlow
 
-[![.NET](https://img.shields.io/badge/.NET-8-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
-
-[![Kafka](https://img.shields.io/badge/Apache-Kafka-231F20?logo=apachekafka)](https://kafka.apache.org/)
-
-[![SQL Server](https://img.shields.io/badge/SQL-Server-CC2927?logo=microsoftsqlserver)](https://www.microsoft.com/sql-server)
-
-[![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker)](https://docker.com/)
-
-![Architecture](https://img.shields.io/badge/Architecture-Clean%20Architecture-blue)
-
-![DDD](https://img.shields.io/badge/DDD-Domain%20Driven%20Design-orange)
-
-![Tests](https://img.shields.io/badge/Tests-xUnit-green)
+[![.NET 8](https://img.shields.io/badge/.NET-8-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![C#](https://img.shields.io/badge/C%23-Visual%20Studio-239120?logo=c-sharp&logoColor=white)](https://docs.microsoft.com/dotnet/csharp/)
+[![Entity Framework](https://img.shields.io/badge/EF-Core-512BD4?logo=dotnet&logoColor=white)](https://learn.microsoft.com/ef/)
+[![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/sql-server)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://docker.com/)
+[![Kafka](https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white)](https://kafka.apache.org/)
+[![xUnit](https://img.shields.io/badge/xUnit-6DA55F?logo=xunit&logoColor=white)](https://xunit.net/)
+[![TDD](https://img.shields.io/badge/TDD-Test%20Driven%20Development-orange)](https://en.wikipedia.org/wiki/Test-driven_development)
+[![DDD](https://img.shields.io/badge/DDD-Domain%20Driven%20Design-blue)](https://en.wikipedia.org/wiki/Domain-driven_design)
+[![Migrations](https://img.shields.io/badge/Migrations-EF%20Core-lightgrey)](https://learn.microsoft.com/ef/core/managing-schemas/migrations/)
+[![User Secrets](https://img.shields.io/badge/User%20Secrets-SecretManager-lightgrey)](https://learn.microsoft.com/aspnet/core/security/app-secrets)
 
 SalesFlow é um **sistema de vendas orientado a eventos**, projetado para demonstrar arquitetura backend moderna baseada em **DDD, Clean Architecture e mensageria com Kafka**.
 
@@ -125,12 +123,11 @@ salesflow
 
 ```mermaid
 flowchart TD
-    Client --> API[API (Presentation)]
-    API --> App[Application (UseCases)]
-    App --> Domain[Domain (Entities / Aggregates)]
-    Domain --> Infra[Infrastructure (DB / Kafka)]
+    Client --> API
+    API --> Application
+    Application --> Domain
+    Domain --> Infrastructure
 ```
-
 ---
 
 # Fluxo de venda (Event Driven)
