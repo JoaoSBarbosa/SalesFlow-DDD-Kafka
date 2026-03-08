@@ -3,7 +3,7 @@ using SalesFlow.UnitTests.Commons;
 
 namespace SalesFlow.UnitTests.Entities.Users;
 
-public class UserFixture: BaseFixture
+public class UserFaker: BaseFixture
 {
 
 
@@ -28,5 +28,5 @@ public class UserFixture: BaseFixture
     }
 }
 
-[CollectionDefinition(nameof(UserFixture))]
-public class GetValidEmailCollection: ICollectionFixture<UserFixture> {}
+[CollectionDefinition(nameof(UserFaker))]
+public class GetValidEmailCollection: ICollectionFixture<UserFaker> {}

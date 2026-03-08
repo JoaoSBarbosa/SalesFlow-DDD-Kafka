@@ -2,11 +2,11 @@ using SalesFlow.Domain.Entities;
 using SalesFlow.Domain.ValueObjects;
 using SalesFlow.UnitTests.Commons;
 
-namespace SalesFlow.UnitTests.Entities.Products;
+namespace SalesFlow.UnitTests.Fakers;
 
-public class ProductTestFixture: BaseFixture
+public class ProductFaker: BaseFixture
 {
-    public  ProductTestFixture():base()
+    public  ProductFaker():base()
     {}
 
     public string GetValidName()
@@ -40,6 +40,6 @@ public class ProductTestFixture: BaseFixture
    
 }
 
-[CollectionDefinition(nameof(ProductTestFixture))]
-public class ProductTestFixtureCollection: ICollectionFixture<ProductTestFixture>{
+[CollectionDefinition(nameof(ProductFaker))]
+public class ProductTestFixtureCollection: ICollectionFixture<ProductFaker>{
 }
